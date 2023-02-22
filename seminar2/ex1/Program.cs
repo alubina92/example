@@ -15,3 +15,19 @@ else
 {
  Console.WriteLine(d);
 }
+Console.WriteLine("Теперь через метод");
+
+int MaxDigit(int number)
+{
+    if ((number / 10) > (number % 10))
+    { 
+        return (number / 10);
+        Console.WriteLine(number / 10);
+    }
+    else
+    {
+        return (number % 10);
+        Console.WriteLine(number % 10);
+    }
+}
+Console.WriteLine(MaxDigit(a));

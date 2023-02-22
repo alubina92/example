@@ -18,3 +18,18 @@ else
 {
     Console.WriteLine("НЕТ");
 }
+bool kratno(int number)
+{
+    if (number % 7 == 0 && number % 23 == 0) 
+    {
+        return true;
+        Console.WriteLine("кратно");
+    }
+    else 
+    { 
+        Console.WriteLine("нет");
+        return false;
+    }
+}
+Console.WriteLine("Попробуем через метод");
+Console.WriteLine(kratno(a));
