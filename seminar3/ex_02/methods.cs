@@ -106,27 +106,39 @@ public class Methods
         }
     }
     // Сколько раз какое число встречается
-    public static int Counter(int[] array) //счетчик сколько  число встречается
+    public static void CicleInCicle(int[] array) //счетчик сколько  число встречается
     {
-        int count;
-        int size = array.Length;
-
-        for (int i = 0; i < size; i++)
-        {
-            int ex = arrive[i];
-            for (int index = 0; index < size; index++)
+        for(int i = 0; i< array.Length; i++)
+         {
+            for(int j = 0; j<array.Length; j++)
             {
-                if (int ex == arrive[index]) count++;
-                else count = count;
+                if(array[i]!=array[j])
+                System.Console.WriteLine($"{array[i]}   {array[j]}");
             }
-        }
+     
+         }
     }
-
-
-
-   // return Count;
-    //Console.WriteLine(ex +" найдено "+ count);
-  
+    public static void Counter(int[]array)
+    {
+        
+        for(int i = 0; i< array.Length; i++)
+         {
+            int count =0;
+            
+            for(int j = 0; j<array.Length; j++)
+            {
+            
+                if(array[i] == array[j])
+                count++;
+                
+            
+            }
+            
+             System.Console.WriteLine($"{array[i]}   {count}");
+     
+         }
+    }
+    
 
 public static void True() //проверка пятизначное число или нет
 {

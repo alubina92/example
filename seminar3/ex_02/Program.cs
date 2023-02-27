@@ -7,6 +7,6 @@ int N = GetNumber("Введите число");
 int[] array = CreateArray(N);
 FillArray(array);
 Print(array);
-
+Counter(array);
 
 
